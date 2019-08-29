@@ -66,6 +66,14 @@ objects:
         - env:
           - name: CATALOG_ENDPOINT
             value: "http://catalog:8080"
+            - name: DATABASE_SERVICE_NAME
+            value: "mysql"
+            - name: MYSQL_DATABASE
+            value: "jpa_example"
+            - name: MYSQL_USER
+            value: "asfuser"
+            - name: MYSQL_PASSWORD
+            value: "Myp@ssw0rd"
           image: student
           imagePullPolicy: Always
           livenessProbe:
